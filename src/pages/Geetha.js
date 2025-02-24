@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../components/styles/Slokas.css';
 import countries from "../components/data";
+import krishImage from "../krish.jpg";
 
 
 export default function Geetha() {
@@ -126,7 +127,7 @@ export default function Geetha() {
             <div>
                 <div className="myths-box">
                     <div className="myths-imge">
-                        <img className="myths-img" src="./assets/Krish.jpg" alt="Krishna" />
+                    <img className="myths-img" src={krishImage} alt="Krishna" />
                     </div>
                     <div className="myths-form">
                         <p className='myths-start'>Enter the Chapter and Slokha Number to get respective Slokha And Its Meaning</p>
